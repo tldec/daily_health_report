@@ -13,7 +13,7 @@ jcjgqr=0&sffdypz=0&zybj=&dzjkmys=3&id=5048756&jcbhrq=&jcwhryfs=&tw=3&wjtw=&jhfjh
 
 3. 将`main.py`中的`cookie`设置为第2步中复制的`Cookie`.
 
-4. 删除第2步复制的数据中的 `&date=20200503`和`&created=1588475919`, 设置为`main.py`中的`msg`(替换`your_post_data`).
+4. 删除第2步复制的数据中的 `&date=20200503`和`&created=1588475919`,并将`main.py`中的`msg`设置为该值(替换`your_post_data`).
 
 5. 一键打卡: 打开windows/linux命令行，运行 `python3 main.py` .
 
