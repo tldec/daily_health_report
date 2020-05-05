@@ -15,11 +15,14 @@ jcjgqr=0&sffdypz=0&zybj=&dzjkmys=3&id=5048756&jcbhrq=&jcwhryfs=&tw=3&wjtw=&jhfjh
 
 4. 删除第2步复制的数据中的 `&date=20200503`和`&created=1588475919`, 设置为`main.py`中的`msg`(替换`your_post_data`).
 
-5. nothing to do, just type `python3 main.py` in your windows or linux terminal. Enjoy!
+5. 一键打卡: 打开windows/linux命令行，运行 `python3 main.py` .
 
 6. 定时打卡(以linux为例):
-
+* 在命令行输入
 ```
-# crontab -e 
+crontab -e 
+```
+* 为了在每天的14：00 定时打卡，可以在文件末尾添加以下内容: 
+```
 0 0 14 * * python3 your_directory/main.py
 ```
