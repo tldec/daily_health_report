@@ -26,3 +26,7 @@ crontab -e
 ```
 0 0 14 * * python3 your_directory/main.py
 ```
+
+
+
+enjoy！
