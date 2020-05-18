@@ -4,6 +4,17 @@
 import requests
 import time
 import json
+import urllib3
+
+# Fix "SSLError: dh key too small" problem on Centos 8.
+requests.packages.urllib3.disable_warnings()
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+try:
+    requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
+except AttributeError:
+    # no pyopenssl support used / needed / available
+    pass
+
 url = "https://wxxy.csu.edu.cn/ncov/wap/default/save"
 # 将获取到的cookie替换'your_cookie'
 cookie = "your_cookie"
